@@ -146,7 +146,7 @@ d. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the comm
 </p>
 <p>
 
-**Step 7: Observe SSH Traffic**
+**Step 8: Observe SSH Traffic**
 
 a. Back in Wireshark, filter for SSH traffic only 
 ![Optional Image Description](https://i.imgur.com/Q3oE1RU.png)
@@ -163,7 +163,7 @@ b. From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its 
 </p>
 <p>
 
-**Step 8: Observe DHCP Traffic**
+**Step 9: Observe DHCP Traffic**
 
 a. Back in Wireshark, filter for DHCP traffic only
 ![Optional Image Description](https://i.imgur.com/jyr6dnV.png)
@@ -180,7 +180,7 @@ b. From your Windows 10 VM, attempt to issue your VM a new IP address from the c
 </p>
 <p>
 
-**Step 9: Observe DNS Traffic**
+**Step 10: Observe DNS Traffic**
 
 a. Back in Wireshark, filter for DNS traffic only
 ![Optional Image Description](https://i.imgur.com/EvpYV5J.png)

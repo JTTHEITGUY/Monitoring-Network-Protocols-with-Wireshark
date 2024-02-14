@@ -205,5 +205,6 @@ a. Close your Remote Desktop connection
 b. Delete the Resource Group(s) created at the beginning of this lab
 ![Optional Image Description](https://i.imgur.com/H42oQJj.png)
 
+A big shoutout to Course Careers and Josh Madakor for providing the inspiration for this lab!
 
 

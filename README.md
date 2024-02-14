@@ -54,17 +54,17 @@ Create a Resource Group using the Azure Portal website (A resource group can als
 **Step 2: Create a Windows 10 Virtual Machine (VM)**
 
 a. While creating the VM, select the previously created Resource Group
-![Optional Image Description](https://i.imgur.com/EwZsxsu.png)
+![Optional Image Description](https://i.imgur.com/8h0Ub2J.png)
 
-![Optional Image Description](https://i.imgur.com/QX826qw.png)
+![Optional Image Description](https://i.imgur.com/sXMyTiM.png)
 
 **Step 3: Create a Linux (Ubuntu) VM**
 
-![Optional Image Description](https://i.imgur.com/QJHHoF4.png)
+![Optional Image Description](https://i.imgur.com/tt7aETc.png)
 
 
 a. While creating the VM, select the previously created Resource Group and VNET
-![Optional Image Description](https://i.imgur.com/5Mb6ZpM.png)
+![Optional Image Description](https://i.imgur.com/zBnj4bX.png)
 
 </p>
 <br />
@@ -77,7 +77,7 @@ a. While creating the VM, select the previously created Resource Group and VNET
 
 **Step 4: Observe Your Virtual Network Topology within Network Watcher**
 
-![Optional Image Description](https://i.imgur.com/LzEPu0l.png)
+![Optional Image Description](https://i.imgur.com/6Q346nw.png)
 
 </p>
 <br />
@@ -90,7 +90,7 @@ a. While creating the VM, select the previously created Resource Group and VNET
 **Step 5: Observe ICMP Traffic**
 
 a. Use Remote Desktop to connect to your Windows 10 Virtual Machine
-![Optional Image Description](https://i.imgur.com/7ZaXV8t.png)
+![Optional Image Description](https://i.imgur.com/yhAsPgP.png)
 
 b. Within your Windows 10 Virtual Machine, Install Wireshark
 ![Optional Image Description](https://i.imgur.com/P9hH2WW.png)
@@ -107,7 +107,7 @@ b. Within your Windows 10 Virtual Machine, Install Wireshark
 **Step 6: Open Wireshark and filter for ICMP traffic only**
 
 a. Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM
-![Optional Image Description](https://i.imgur.com/3PCpEDh.png)
+![Optional Image Description](https://i.imgur.com/VAlf2yP.png)
 
 b. Observe ping requests and replies within WireShark
 ![Optional Image Description](https://i.imgur.com/YqhhMqu.png)
@@ -125,14 +125,14 @@ b. Observe ping requests and replies within WireShark
 **Step 7: Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM**
 
 a. Open the Network Security Group your Ubuntu VM is using and disable (deny) incoming (inbound) ICMP traffic
-![Optional Image Description](https://i.imgur.com/k1ypazG.png)
-![Optional Image Description](https://i.imgur.com/al1CPED.png)
+![Optional Image Description](https://i.imgur.com/9mtkkZG.png)
+![Optional Image Description](https://i.imgur.com/ntjVTQH.png)
 
 b. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (notice the perpetual ping has stopped due to inbound ICMP traffic being disabled)
 ![Optional Image Description](https://i.imgur.com/7XE35Ps.png)
 
 c. Re-enable ICMP traffic for the Network Security Group your Ubuntu VM is using
-![Optional Image Description](https://i.imgur.com/UtXxCfN.png)
+![Optional Image Description](https://i.imgur.com/affJN79.png)
 
 d. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (it should resume working again)
 ![Optional Image Description](https://i.imgur.com/sQ68cVJ.png)

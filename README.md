@@ -42,11 +42,12 @@ This tutorial details the prerequisites and installation steps for Wireshark and
 <p>
 
   **Step 1: Create a Resource Group**
+
 Create a Resource Group using the Azure Portal website (A resource group can also be created using the Azure CLI, see my other tutorial for that method)
 
 <p>
  
-![Optional Image Description](https://i.imgur.com/LOwHRpB.png)
+![Optional Image Description](https://i.imgur.com/plCEaAE.png)
 
 </p>
 <p>

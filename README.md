@@ -31,7 +31,7 @@ This tutorial details the prerequisites and installation steps for Wireshark and
 - Wireshark
 - Microsoft Windows PC 
 - Windows Powershell 
-- Microsoft Azure -(Resource Group, 2 Virtual Machines, and a Virtual Network.)
+- Microsoft Azure -(1 Resource Group, 2 Virtual Machines, and a Virtual Network.)
 
 
 <h2>Installation Steps</h2>

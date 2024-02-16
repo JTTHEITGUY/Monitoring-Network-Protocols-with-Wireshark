@@ -54,17 +54,17 @@ Create a Resource Group using the Azure Portal website (A resource group can als
 
 **Step 2: Create a Windows 10 Virtual Machine (VM)**
 
-a. While creating the VM, select the previously created Resource Group.
+a. While creating the Virtual Machine, select the previously created Resource Group.
 ![Optional Image Description](https://i.imgur.com/8h0Ub2J.png)
 
 ![Optional Image Description](https://i.imgur.com/sXMyTiM.png)
 
-**Step 3: Create a Linux (Ubuntu) VM**
+**Step 3: Create a Linux (Ubuntu) Virtual Machine**
 
 ![Optional Image Description](https://i.imgur.com/tt7aETc.png)
 
 
-a. While creating the VM, select the previously created Resource Group and VNET.
+a. While creating the Virtual Machine, select the previously created Resource Group and VNET.
 ![Optional Image Description](https://i.imgur.com/zBnj4bX.png)
 
 </p>
@@ -88,7 +88,7 @@ a. While creating the VM, select the previously created Resource Group and VNET.
 </p>
 <p>
 
-**Step 5: Observe ICMP Traffic**
+**Step 5: Connect to the Windows 10 Virtual Machine and install Wireshark**
 
 a. Use Remote Desktop to connect to your Windows 10 Virtual Machine.
 ![Optional Image Description](https://i.imgur.com/yhAsPgP.png)
@@ -105,12 +105,12 @@ b. Within your Windows 10 Virtual Machine, Install Wireshark.
 </p>
 <p>
 
-**Step 6: Open Wireshark and filter for ICMP traffic only**
+**Step 6: Open Wireshark and filter for ICMP traffic**
 
-a. Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM.
-![Optional Image Description](https://i.imgur.com/VAlf2yP.png)
+a. Retrieve the private IP address of the Ubuntu Virtual Machine and attempt to ping it from within the Windows 10 Virtual Machine.
+![Optional Image Description](https://i.imgur.com/guFbACk.png)
 
-b. Observe ping requests and replies within WireShark
+b. Observe ping requests and replies within WireShark.
 ![Optional Image Description](https://i.imgur.com/YqhhMqu.png)
 ![Optional Image Description](https://i.imgur.com/GrI0fOx.png)
 </p>
@@ -123,19 +123,19 @@ b. Observe ping requests and replies within WireShark
 <p>
 
 
-**Step 7: Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM**
+**Step 7: Initiate a perpetual/non-stop ping from your Windows 10 Virtual Machine to your Ubuntu Virtual Machine**
 
-a. Open the Network Security Group your Ubuntu VM is using and disable (deny) incoming (inbound) ICMP traffic.
+a. Open the Network Security Group your Ubuntu Virtual Machine is using and disable (deny) incoming (inbound) ICMP traffic.
 ![Optional Image Description](https://i.imgur.com/9mtkkZG.png)
 ![Optional Image Description](https://i.imgur.com/ntjVTQH.png)
 
-b. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (notice the perpetual ping has stopped due to inbound ICMP traffic being disabled)
+b. Back in the Windows 10 Virtual Machine, observe the ICMP traffic in WireShark and the command line Ping activity (notice the perpetual ping has stopped due to inbound ICMP traffic being disabled).
 ![Optional Image Description](https://i.imgur.com/7XE35Ps.png)
 
-c. Re-enable ICMP traffic for the Network Security Group your Ubuntu VM is using.
+c. Re-enable ICMP traffic for the Network Security Group your Ubuntu Virtual Machine is using.
 ![Optional Image Description](https://i.imgur.com/affJN79.png)
 
-d. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (it should resume working again)
+d. Back in the Windows 10 Virtual Machine, observe the ICMP traffic in WireShark and the command line Ping activity (it should resume working again).
 ![Optional Image Description](https://i.imgur.com/sQ68cVJ.png)
 
 </p>
@@ -149,10 +149,10 @@ d. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the comm
 
 **Step 8: Observe SSH Traffic**
 
-a. Back in Wireshark, filter for SSH traffic only.
+a. Back in Wireshark, filter for SSH traffic.
 ![Optional Image Description](https://i.imgur.com/Q3oE1RU.png)
 
-b. From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address). Type commands (username, pwd, etc) into the Linux SSH connection and observe SSH traffic spam in WireShark.
+b. From your Windows 10 Virtual Machine, “SSH into” your Ubuntu Virtual Machine (via its private IP address). Type commands (username, pwd, etc) into the Linux SSH connection and observe SSH traffic in WireShark.
 ![Optional Image Description](https://i.imgur.com/9l5TJrf.png)
 
 </p>
@@ -166,10 +166,10 @@ b. From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its 
 
 **Step 9: Observe DHCP Traffic**
 
-a. Back in Wireshark, filter for DHCP traffic only.
+a. Back in Wireshark, filter for DHCP traffic.
 ![Optional Image Description](https://i.imgur.com/jyr6dnV.png)
 
-b. From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew) Observe the DHCP traffic appearing in WireShark.
+b. From your Windows 10 Virtual Machine, attempt to issue your Virtual Machine a new IP address from the command line (ipconfig /renew) Observe the DHCP traffic appearing in WireShark.
 ![Optional Image Description](https://i.imgur.com/xjnyd9m.png)
 
 </p>
@@ -183,10 +183,10 @@ b. From your Windows 10 VM, attempt to issue your VM a new IP address from the c
 
 **Step 10: Observe DNS Traffic**
 
-a. Back in Wireshark, filter for DNS traffic only.
+a. Back in Wireshark, filter for DNS traffic.
 ![Optional Image Description](https://i.imgur.com/EvpYV5J.png)
 
-b. From your Windows 10 VM within a command line, use nslookup to see the google.com IP address. Observe the DNS traffic being shown in WireShark.
+b. From your Windows 10 within a command line, use nslookup to see the google.com IP address. Observe the DNS traffic being shown in WireShark.
 ![Optional Image Description](https://i.imgur.com/bQc22Gw.png)
 
 </p>

@@ -23,7 +23,7 @@ This tutorial details the prerequisites and installation steps for Wireshark and
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> 
-- Linux Ubuntu
+- Ubuntu Linux 
 
 <h2>List of Prerequisites</h2>
 
